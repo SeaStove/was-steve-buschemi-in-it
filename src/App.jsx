@@ -15,7 +15,7 @@ function App() {
       `https://api.themoviedb.org/3/search/movie?query=${movie}`,
       {
         headers: {
-          Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NTI3MTQ5NjYzMDgyODJlM2QxNzU0NWYwOGU2NWY3NiIsInN1YiI6IjY0YjdlYzJjYTgwNjczMDBlNzYyNjRjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.w7bfyoXHLTulxtMPiKeuqqZ0mRcP-cGEgyUqkVzdPyk`,
+          Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
         },
       }
     );
